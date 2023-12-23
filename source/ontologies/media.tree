@@ -1,0 +1,45 @@
+classes +a:owl/Class +hi-inv-rel:subclass-of
+	owl/Thing
+		Conference
+			VideoMeeting
+				ZoomVideoMeeting
+		Chat
+			IRCChannel
+			TelegramChat
+		MediaGenre
+			Lecture
+		MediaOutlet
+			TelegramChannel
+			Twitter
+			WebSite
+				TechnoBlogSite
+			VkontaktePublic
+			YoutubeChannel
+		MediaArtifact
+			Video
+			Newspaper
+			Text
+				Article
+					Essay
+				BlogPost
+				Book
+properties +a:rdf/Property +hi-inv-rel:subproperty-of
+	role
+		media-role
+			moderator
+			participant
+			speaker
+				tutor domain:Lecture
+				lecturer domain:Lecture
+	channel range:MediaOutlet
+		yt-channel range:YoutubeChannel
+	contributor domain:Project range:Person
+		author
+			creator
+		editor
+	lecture range:Lecture
+	ref d:"Reference, mentions of other persons or projects"
+	url
+		blog-url
+			essay-url
+	video

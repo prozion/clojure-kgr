@@ -1,0 +1,31 @@
+clojure.test
+	are
+	assert-any
+	assert-expr
+	assert-predicate
+	compose-fixtures
+	deftest
+	deftest-
+	do-report
+	file-position deprecated:>=1.2
+	function?
+	get-possibly-unbound-var related:var-get
+	inc-report-counter
+	is
+	join-fixtures
+	report
+	run-all-tests
+	run-tests
+	set-test
+	successful?
+	test-all-vars
+	test-ns
+	test-var
+	test-vars
+	testing
+	testing-contexts-str
+	testing-vars-str
+	try-expr
+	use-fixtures
+	with-test
+	with-test-out

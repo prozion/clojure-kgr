@@ -1,0 +1,17 @@
+start d:"code editor, written in Clojure"
+	launch cmd1:`clojure -Sdeps '{:deps {mogenslund/liquid {:mvn/version "2.1.1"}}}' -m liq.core` cmd2:`java -jar ~/bin/liquid/liq.jar`
+	setup file:~/.liq
+actions
+	movement
+		left normal:`h` insert:`arrow-left`
+		down normal:`j` insert:`arrow-down`
+		up normal:`k` insert:`arrow-up`
+		right normal:`l` insert:`arrow-right`
+		move-to-matching-paren normal:`%` insert:`ctrl-%`^suggestion
+		line-start normal:`0`
+		line-end normal:`$`
+		buffer-start normal:`gg`
+		buffer-end normal:`G`
+	evaluate-expression f:<?> normal:`c p p`
+	comment-out f:<?> normal:<?> insert:<?>
+	

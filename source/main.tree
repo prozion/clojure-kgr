@@ -1,0 +1,31 @@
+redkgr a:owl/Ontology ns:https://purl.org/prozion/clojure# rdfs/label:"Knowledge graph on Clojure"
+	namespaces
+		rdf ns:http://www.w3.org/1999/02/22-rdf-syntax-ns#
+		rdfs ns:http://www.w3.org/2000/01/rdf-schema#
+		owl ns:http://www.w3.org/2002/07/owl#
+		xsd ns:http://www.w3.org/2001/XMLSchema#
+	[ontologies/code.tree]
+	[ontologies/editing.tree]
+	[ontologies/internet.tree]
+	[ontologies/literal_type.tree]
+	[ontologies/media.tree]
+	[ontologies/metrics.tree]
+	[ontologies/object.tree]
+	[ontologies/organization.tree]
+	[ontologies/person.tree]
+	[ontologies/place.tree]
+	[ontologies/process.tree]
+	[ontologies/project.tree]
+	[ontologies/source.tree]
+	[ontologies/time.tree]
+	individuals
+		[facts/books.tree]
+		[facts/communities.tree]
+		[facts/libs.tree]
+		; [facts/liquid.tree]
+		[facts/organizations.tree]
+		[facts/people.tree]
+		[facts/places.tree]
+		[facts/universities.tree]
+		; [facts/versions.tree]
+		[facts/websites.tree]

@@ -1,0 +1,7 @@
+classes +a:owl/Class +hi-inv-rel:subclass-of
+	owl/Thing
+		Project
+properties +a:rdf/Property +hi-inv-rel:subproperty-of
+	project range:Project
+	project-author domain:Project range:Person
+	project-participant domain:Project range:Person

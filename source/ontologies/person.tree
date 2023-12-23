@@ -1,0 +1,14 @@
+classes +a:owl/Class +hi-inv-rel:subclass-of
+	Person
+properties +a:rdf/Property +hi-inv-rel:subproperty-of
+	date range:Date
+		bdate d:"Date of birth" range:Year
+			byear range:rdfs/Literal
+		ddate d:"Date of death" range:Year
+	edu d:"Education, in what university (faculty) the person made the studies and what (s)he graduated"
+	place
+		bplace
+		dplace
+	url
+		homepage-url
+		

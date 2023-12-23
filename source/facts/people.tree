@@ -1,0 +1,40 @@
+people +a:Person
+	Иван_Гришаев place:Воронеж homepage-url:grishaev.me
+	Akhil_Wali
+	Alex_Miller
+	Amit_Rathore
+	Andrey_Antukh
+	Anuj_Kumar
+	Ben_Vandgrift
+	Carin_Meier
+	Chas_Emerick
+	Colin_Jones
+	Daniel_Higginbotham
+	David_Jarvis
+	Dmitri_Sotnikov
+	Dragan_Djuric
+	Eduardo_Diaz
+	Eric_Rochester
+	Henry_Garner
+	Jeremy_Anderson
+	Joseph_Fahey
+	Julian_Gamble
+	Konrad_Szydlo
+	Leonardo_Borges
+	Luke_VanderHart
+	Mark_McDonnell
+	Michael_Fogus
+	Paul_Stadig
+	Rafik_Naccache
+	Rich_Hickey bdate:1965 edu:NYU creator:Clojure d:"Creator of the language, BDFL"
+	Robert_Martin bdate:1952 essay-url:blog.cleancoder.com/uncle-bob/2019/08/22/WhyClojure.html d:"Author of Agile Manifesto"
+	Russ_Olsen
+	Ryan_Baldwin
+	Ryan_Kelker
+	Ryan_Neufeld
+	Shantanu_Kumar
+	Stephan_Kamphausen
+	Stuart_Halloway
+	Stuart_Sierra
+	Timothy_Washington
+	Zachary_Tellman

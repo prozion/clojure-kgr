@@ -1,0 +1,6 @@
+websites +a:WebSite
+	Clojure url:clojure.org d:"central resource for clojure docs and other things"
+	ClojureAtlas url:clojureatlas.com d:"visualization of relationships within Clojure"
+	ClojureStream url:clojure.stream d:"Learn Clojure, ClojureScript, Datalog, and ecosystem of libraries by building projects with idiomatic Clojure code"
+	ClojureVerse url:clojureverse.org d:"Blogs by various authors about Clojure"
+	FunctionalWorks url:https://functional.works-hub.com/clojure-jobs

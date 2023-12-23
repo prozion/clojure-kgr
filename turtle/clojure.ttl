@@ -1,0 +1,2659 @@
+@prefix : <https://purl.org/prozion/clojure#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+
+:Aahen
+ rdf:type :Place .
+
+:abbr
+ rdfs:comment "Abbreviation" ;
+ rdf:type rdf:Property ;
+ rdfs:range rdfs:Literal .
+
+:Academia_Sinica
+ rdf:type :University ;
+ :hq :Taipei ;
+ :start "1928", "1949" .
+
+:Akhil_Wali
+ rdf:type :Person .
+
+:Albuquerque
+ rdf:type :Place .
+
+:Alex_Miller
+ rdf:type :Person .
+
+:Alicante
+ rdf:type :Place .
+
+:Amherst
+ rdf:type :Place .
+
+:Amit_Rathore
+ rdf:type :Person .
+
+:Amsterdam
+ rdf:type :Place .
+
+:Andrey_Antukh
+ rdf:type :Person .
+
+:Ankara
+ rdf:type :Place .
+
+:Ann_Arbor
+ rdf:type :Place .
+
+:Anuj_Kumar
+ rdf:type :Person .
+
+:Area
+ rdf:type owl:Class ;
+ rdfs:subClassOf owl:Thing .
+
+:Article
+ rdf:type owl:Class ;
+ rdfs:subClassOf :Text .
+
+:Athens
+ rdf:type :Place .
+
+:Auckland
+ rdf:type :Place .
+
+:Austin
+ rdf:type :Place .
+
+:Australia
+ rdf:type :Country .
+
+:author
+ rdf:type rdf:Property ;
+ rdfs:subPropertyOf :contributor .
+
+:Babashka_book
+ :url "book.babashka.org" .
+
+:Baltimore
+ rdf:type :Place .
+
+:bdate
+ rdfs:subPropertyOf :date ;
+ rdfs:comment "Date of birth" ;
+ rdf:type rdf:Property ;
+ rdfs:range :Year .
+
+:Beijing
+ rdf:type :Place .
+
+:Belarus
+ rdf:type :Country .
+
+:Belfast
+ rdf:type :Place .
+
+:Belgium
+ rdf:type :Country .
+
+:Ben_Vandgrift
+ rdf:type :Person .
+
+:Bergen
+ rdf:type :Place .
+
+:Berkeley
+ rdf:type :Place .
+
+:Berlin
+ rdf:type :Place .
+
+:Birmingham
+ rdf:type :Place .
+
+:Blacksburg
+ rdf:type :Place .
+
+:blog-url
+ rdf:type rdf:Property ;
+ rdfs:subPropertyOf :url .
+
+:BlogPost
+ rdf:type owl:Class ;
+ rdfs:subClassOf :Text .
+
+:Book
+ rdf:type owl:Class ;
+ rdfs:subClassOf :Text .
+
+:boosty
+ rdf:type rdf:Property ;
+ rdfs:subPropertyOf :url .
+
+:Boston
+ rdf:type :Place .
+
+:bplace
+ rdf:type rdf:Property ;
+ rdfs:subPropertyOf :place .
+
+:Brazil
+ rdf:type :Country .
+
+:Brigham_Young_University
+ owl:sameAs :BYU ;
+ rdf:type :University ;
+ :hq :Provo ;
+ :start "1875" .
+
+:Brisbane
+ rdf:type :Place .
+
+:Bristol
+ rdf:type :Place .
+
+:Brussels
+ rdf:type :Place .
+
+:Buffalo
+ rdf:type :Place .
+
+:build-clj
+ rdfs:comment "Common build tasks abstracted into a library" .
+
+:byear
+ rdfs:subPropertyOf :bdate ;
+ rdf:type rdf:Property ;
+ rdfs:range rdfs:Literal .
+
+:Caltech
+ owl:sameAs :CIT ;
+ rdf:type :University ;
+ rdfs:label "California Institute of Technology" ;
+ :hq :Pasadena ;
+ :start "1891" .
+
+:calva
+ rdfs:comment "integrated REPL powered environment for enjoyable and productive Clojure and ClojureScript development in Visual Studio Code" .
+
+:Cambridge
+ rdf:type :Place .
+
+:Cambridge_MA
+ rdf:type :Place .
+
+:campus
+ rdfs:domain :University ;
+ rdf:type rdf:Property ;
+ rdfs:range :Place .
+
+:Canada
+ rdf:type :Country .
+
+:Canterbury
+ rdf:type :Place .
+
+:Carin_Meier
+ rdf:type :Person .
+
+:Carnegie_Mellon_Silicon_Valley
+ rdf:type :University ;
+ :part-of :UCarnegieMellon ;
+ :hq :Mountain_View ;
+ :start "2002" .
+
+:CDartmouth
+ rdf:type :University ;
+ :member :Ivy_League ;
+ rdfs:label "Dartmouth College" ;
+ :hq :Hanover ;
+ :start "1769" .
+
+:Chalmers
+ rdf:type :University ;
+ rdfs:label "Chalmers University of Technology" ;
+ :hq :Gothenburg ;
+ :start "1829" .
+
+:Champaign
+ rdf:type :Place .
+
+:channel
+ rdf:type rdf:Property ;
+ rdfs:range :MediaOutlet .
+
+:Charlottesville
+ rdf:type :Place .
+
+:Chas_Emerick
+ rdf:type :Person .
+
+:Chat
+ rdf:type owl:Class ;
+ rdfs:subClassOf owl:Thing .
+
+:cheshire
+ rdfs:comment "feature-rich, fast JSON encoder" .
+
+:Chicago
+ rdf:type :Place .
+
+:Chile
+ rdf:type :Country .
+
+:China
+ rdf:type :Country .
+
+:CIMS
+ rdf:type :University ;
+ :part-of :NYU ;
+ rdfs:label "Courant Institute of Mathematical Sciences" ;
+ :hq :New_York ;
+ :start "1935" .
+
+:CIT
+ owl:sameAs :Caltech ;
+ rdf:type :University ;
+ rdfs:label "California Institute of Technology" ;
+ :hq :Pasadena ;
+ :start "1891" .
+
+:city
+ rdfs:subPropertyOf :place ;
+ rdf:type rdf:Property ;
+ rdfs:range :City .
+
+:City
+ rdf:type owl:Class ;
+ rdfs:subClassOf :Place .
+
+:Class
+ rdf:type owl:Class .
+
+:Clermont-Ferrand
+ rdf:type :Place .
+
+:clj-xml-validation
+ rdfs:comment "A library designed to wrap the Java libraries for XML schema validation" .
+
+:Clojure
+ :year "2010"^^xsd:gYear ;
+ :url "clojure.org" ;
+ :author :Stephan_Kamphausen ;
+ rdfs:comment "central resource for clojure docs and other things" ;
+ rdf:type :WebSite .
+
+:clojure-tools
+ rdfs:comment "A Cloud Native Buildpack that builds Clojure-based applications from source" .
+
+:Clojure_Applied
+ :year "2015"^^xsd:gYear ;
+ :author :Ben_Vandgrift, :Alex_Miller .
+
+:Clojure_Cookbook
+ :year "2014"^^xsd:gYear ;
+ :author :Ryan_Neufeld .
+
+:Clojure_Data_Analysis_Cookbook
+ :year "2015"^^xsd:gYear ;
+ :author :Eric_Rochester .
+
+:Clojure_Data_Structures_and_Algorithms
+ :year "2015"^^xsd:gYear ;
+ :author :Rafik_Naccache .
+
+:Clojure_Extended_Java_Interop
+ :year "2018"^^xsd:gYear ;
+ :author :Иван_Гришаев .
+
+:Clojure_for_Data_Science
+ :year "2015"^^xsd:gYear ;
+ :author :Henry_Garner .
+
+:Clojure_for_Domain_specific_Languages
+ :year "2013"^^xsd:gYear ;
+ :author :Ryan_Kelker .
+
+:Clojure_for_Finance
+ :year "2016"^^xsd:gYear ;
+ :author :Timothy_Washington .
+
+:Clojure_for_Java_Developers
+ :year "2016"^^xsd:gYear ;
+ :author :Eduardo_Diaz .
+
+:Clojure_for_Machine_Learning
+ :year "2014"^^xsd:gYear ;
+ :author :Akhil_Wali .
+
+:Clojure_for_the_Brave_and_True
+ :year "2015"^^xsd:gYear ;
+ :author :Daniel_Higginbotham .
+
+:Clojure_High_Perfomance_Programming
+ :year "2015"^^xsd:gYear ;
+ :author :Shantanu_Kumar .
+
+:Clojure_in_Action
+ :year "2016"^^xsd:gYear ;
+ :author :Amit_Rathore .
+
+:Clojure_Polymorphism
+ :year "2019"^^xsd:gYear ;
+ :author :Paul_Stadig .
+
+:Clojure_Programming
+ :year "2012"^^xsd:gYear ;
+ :author :Chas_Emerick .
+
+:Clojure_Reactive_Programming
+ :year "2015"^^xsd:gYear ;
+ :author :Leonardo_Borges .
+
+:Clojure_Recipes
+ :year "2015"^^xsd:gYear ;
+ :author :Julian_Gamble .
+
+:Clojure_Russia
+ :twi "twitter.com/clojure_ru" .
+
+:Clojure_Web_Development_Essentials
+ :year "2015"^^xsd:gYear ;
+ :author :Ryan_Baldwin .
+
+:Clojure_на_производстве
+ :year "2021"^^xsd:gYear ;
+ :author :Иван_Гришаев .
+
+:ClojureAtlas
+ :url "clojureatlas.com" ;
+ rdfs:comment "visualization of relationships within Clojure" ;
+ rdf:type :WebSite .
+
+:ClojureFunction
+ rdf:type owl:Class ;
+ rdfs:subClassOf :Function .
+
+:ClojureScript_Unraveled
+ :year "2016"^^xsd:gYear ;
+ :author :Andrey_Antukh .
+
+:ClojureScript_Up_and_Running
+ :year "2012"^^xsd:gYear ;
+ :author :Stuart_Sierra, :Luke_VanderHart .
+
+:ClojureStream
+ :url "clojure.stream" ;
+ rdfs:comment "Learn Clojure, ClojureScript, Datalog, and ecosystem of libraries by building projects with idiomatic Clojure code" ;
+ rdf:type :WebSite .
+
+:ClojureVerse
+ :url "clojureverse.org" ;
+ rdfs:comment "Blogs by various authors about Clojure" ;
+ rdf:type :WebSite .
+
+:ClojureVersion
+ rdf:type owl:Class ;
+ rdfs:subClassOf :Version .
+
+:Clojurists_Together
+ :url "clojuriststogether.org" .
+
+:Code
+ rdf:type owl:Class .
+
+:Coleraine
+ rdf:type :Place .
+
+:Colin_Jones
+ rdf:type :Person .
+
+:College_Park
+ rdf:type :Place .
+
+:Columbia
+ rdf:type :Place .
+
+:Columbus
+ rdf:type :Place .
+
+:Company
+ rdf:type owl:Class ;
+ rdfs:subClassOf :Organization .
+
+:Conference
+ rdf:type owl:Class ;
+ rdfs:subClassOf owl:Thing .
+
+:contributor
+ rdfs:domain :Project ;
+ rdf:type rdf:Property ;
+ rdfs:range :Person .
+
+:country
+ rdfs:domain :Place ;
+ rdf:type rdf:Property ;
+ rdfs:range :Country .
+
+:Country
+ rdf:type owl:Class ;
+ rdfs:subClassOf :Object .
+
+:creator
+ rdf:type rdf:Property ;
+ rdfs:subPropertyOf :author .
+
+:cronj
+ rdfs:comment "A library for creating cron-like scheduling tasks" .
+
+:Czech_Republic
+ rdf:type :Country .
+
+:CПбГУ
+ owl:sameAs :SPBU ;
+ rdf:type :University ;
+ :url "spbu.ru" ;
+ rdfs:label "Санкт-Петербургский Государственный Университет" ;
+ :hq :Санкт-Петербург ;
+ :start "1724", "1819" .
+
+:Daniel_Higginbotham
+ rdf:type :Person .
+
+:Date
+ rdf:type owl:Class ;
+ rdfs:subClassOf :Time .
+
+:date
+ rdf:type rdf:Property ;
+ rdfs:range :Date .
+
+:David_Jarvis
+ rdf:type :Person .
+
+:ddate
+ rdfs:subPropertyOf :date ;
+ rdfs:comment "Date of death" ;
+ rdf:type rdf:Property ;
+ rdfs:range :Year .
+
+:deabbr
+ rdfs:comment "Deabbreviation" ;
+ rdf:type rdf:Property ;
+ rdfs:range rdfs:Literal .
+
+:Deakin_University
+ rdf:type :University ;
+ :hq :Melbourne ;
+ :start "1974" .
+
+:Decimal
+ rdf:type owl:Class ;
+ rdfs:subClassOf rdfs:Literal .
+
+:Deep_Learning_for_Programmers
+ :year "2021"^^xsd:gYear ;
+ :author :Dragan_Djuric .
+
+:def
+ rdfs:comment "Definition" ;
+ rdf:type rdf:Property ;
+ rdfs:range rdfs:Literal .
+
+:defunct-url
+ rdf:type rdf:Property ;
+ rdfs:subPropertyOf :url .
+
+:Denver
+ rdf:type :Place .
+
+:Derry
+ rdf:type :Place .
+
+:digest
+ rdfs:comment "Digest algorithms (md5, sha1 …​) for Clojure" .
+
+:discord
+ rdf:type rdf:Property ;
+ rdfs:subPropertyOf :voip-id .
+
+:Dmitri_Sotnikov
+ rdf:type :Person .
+
+:DomainSpecificLanguage
+ owl:sameAs :DSL ;
+ rdf:type owl:Class ;
+ rdfs:subClassOf :Language .
+
+:dplace
+ rdf:type rdf:Property ;
+ rdfs:subPropertyOf :place .
+
+:Dragan_Djuric
+ rdf:type :Person .
+
+:Dresden
+ rdf:type :Place .
+
+:Dubai
+ rdf:type :Country .
+
+:Ecublens
+ rdf:type :Place .
+
+:Edinburgh
+ rdf:type :Place .
+
+:editor
+ rdf:type rdf:Property ;
+ rdfs:subPropertyOf :contributor .
+
+:edu
+ rdfs:comment "Education, in what university (faculty) the person made the studies and what (s)he graduated" ;
+ rdf:type rdf:Property .
+
+:Eduardo_Diaz
+ rdf:type :Person .
+
+:Elements_of_Clojure
+ :year "2018"^^xsd:gYear ;
+ :author :Zachary_Tellman .
+
+:email
+ rdf:type rdf:Property ;
+ rdfs:range :Email .
+
+:Email
+ rdf:type owl:Class ;
+ rdfs:subClassOf :Uri .
+
+:end
+ rdf:type rdf:Property ;
+ rdfs:range :Time .
+
+:England
+ rdf:type :Country .
+
+:ENS_Paris
+ rdf:type :University ;
+ rdfs:label "Ecole Normale Superieure" ;
+ :hq :Paris ;
+ :start "1794" .
+
+:environ
+ rdfs:comment "allows to create different application configuration in different environments" .
+
+:EPFL
+ rdf:type :University ;
+ rdfs:label "École polytechnique fédérale de Lausanne" ;
+ :hq :Ecublens ;
+ :start "1853" .
+
+:Eric_Rochester
+ rdf:type :Person .
+
+:Esch-sur-Alzette
+ rdf:type :Place .
+
+:Essay
+ rdf:type owl:Class ;
+ rdfs:subClassOf :Article .
+
+:essay-url
+ rdf:type rdf:Property ;
+ rdfs:subPropertyOf :blog-url .
+
+:etaoin
+ rdfs:comment "testing framework, that uses webdriver interface" .
+
+:ETH_Zurich
+ rdf:type :University ;
+ rdfs:label "Swiss Federal Institute of Technology" ;
+ :hq :Zurich ;
+ :start "1855" .
+
+:Evanston
+ rdf:type :Place .
+
+:Fairborn
+ rdf:type :Place .
+
+:Farmington
+ rdf:type :Place .
+
+:fb
+ rdf:type rdf:Property ;
+ rdfs:subPropertyOf :url .
+
+:Finland
+ rdf:type :Country .
+
+:Float
+ rdf:type owl:Class ;
+ rdfs:subClassOf rdfs:Literal .
+
+:Florence
+ rdf:type :Place .
+
+:former-id
+ rdf:type rdf:Property ;
+ rdfs:subPropertyOf :id .
+
+:former-name
+ rdf:type rdf:Property ;
+ rdfs:subPropertyOf :name .
+
+:FProg_Spb
+ :twi "twitter.com/fprog_spb" .
+
+:France
+ rdf:type :Country .
+
+:Freiburg_im_Breisgau
+ rdf:type :Place .
+
+:from
+ rdfs:domain owl:Thing ;
+ rdf:type rdf:Property ;
+ rdfs:range owl:Thing .
+
+:FSU
+ rdf:type :University ;
+ rdfs:label "Friedrich Schiller-University Jena" ;
+ :hq :Jena ;
+ :start "1558" .
+
+:FUES
+ rdf:type :University ;
+ rdfs:label "Federal University of Espírito Santo" ;
+ :hq :Vitoria ;
+ :start "1954" .
+
+:Function
+ rdf:type owl:Class .
+
+:Functional_Programming_Patterns_in_Scala_and_Clojure
+ :year "2013"^^xsd:gYear .
+
+:FunctionalWorks
+ rdf:type :WebSite ;
+ :url "https://functional.works-hub.com/clojure-jobs" .
+
+:Georgetown_University
+ rdf:type :University ;
+ :hq :Washington .
+
+:Germany
+ rdf:type :Country .
+
+:Getting_Clojure
+ :year "2018"^^xsd:gYear ;
+ :author :Russ_Olsen .
+
+:Ghent
+ rdf:type :Place .
+
+:GIST
+ rdf:type :University ;
+ rdfs:label "Gwangju Institute of Science and Technology" ;
+ :hq :Gwangju .
+
+:github
+ rdf:type rdf:Property ;
+ rdfs:subPropertyOf :url .
+
+:glimt
+ rdfs:comment "HTTP FSM for re-frame" .
+
+:Gothenburg
+ rdf:type :Place .
+
+:Gottingen
+ rdf:type :Place .
+
+:Greece
+ rdf:type :Country .
+
+:GroupOfObjects
+ rdf:type owl:Class ;
+ rdfs:subClassOf owl:Thing .
+
+:GroupOfPeople
+ rdf:type owl:Class ;
+ rdfs:subClassOf :GroupOfObjects .
+
+:Gwangju
+ rdf:type :Place .
+
+:Haifa
+ rdf:type :Place .
+
+:Halle
+ rdf:type :Place .
+
+:Hamburg
+ rdf:type :Place .
+
+:Hanover
+ rdf:type :Place .
+
+:Heidelberg
+ rdf:type :Place .
+
+:Helsinki
+ rdf:type :Place .
+
+:Henry_Garner
+ rdf:type :Person .
+
+:Heraklion
+ owl:sameAs :Iraklion ;
+ rdf:type :Place .
+
+:Hertfordshire
+ rdf:type :Place .
+
+:hiccup
+ rdfs:comment "A fast library for rendering HTML in Clojure" .
+
+:homepage-url
+ rdf:type rdf:Property ;
+ rdfs:subPropertyOf :url .
+
+:Houston
+ rdf:type :Place .
+
+:hq
+ rdfs:domain :Organization ;
+ rdf:type rdf:Property ;
+ rdfs:range :Place .
+
+:Iceland
+ rdf:type :Country .
+
+:Id
+ rdf:type owl:Class ;
+ rdfs:subClassOf rdfs:Literal .
+
+:id
+ rdf:type rdf:Property .
+
+:IIT
+ rdf:type :University ;
+ rdfs:label "Illinois Institute of Technology" ;
+ :hq :Chicago ;
+ :start "1890" .
+
+:Imperial_College_London
+ rdf:type :University ;
+ :url "imperial.ac.uk" ;
+ :hq :London ;
+ :start "1907" .
+
+:India
+ rdf:type :Country .
+
+:insta
+ rdf:type rdf:Property ;
+ rdfs:subPropertyOf :url .
+
+:Integer
+ rdf:type owl:Class ;
+ rdfs:subClassOf rdfs:Literal .
+
+:InteruniversityInformalOrganization
+ rdf:type owl:Class ;
+ rdfs:subClassOf :Organization .
+
+:IRCChannel
+ rdf:type owl:Class ;
+ rdfs:subClassOf :Chat .
+
+:Israel
+ rdf:type :Country .
+
+:Istanbul
+ rdf:type :Place .
+
+:Italy
+ rdf:type :Country .
+
+:Ithaca
+ rdf:type :Place .
+
+:Ivy_League
+ rdf:type :InteruniversityInformalOrganization .
+
+:Japan
+ rdf:type :Country .
+
+:JavaClass
+ rdf:type owl:Class ;
+ rdfs:subClassOf :Class .
+
+:Jena
+ rdf:type :Place .
+
+:Jeremy_Anderson
+ rdf:type :Person .
+
+:job
+ rdfs:subPropertyOf :member ;
+ rdf:type rdf:Property ;
+ rdfs:range :Company .
+
+:Jordanstown
+ rdf:type :Place .
+
+:Joseph_Fahey
+ rdf:type :Person .
+
+:Julian_Gamble
+ rdf:type :Person .
+
+:Karlsruhe
+ rdf:type :Place .
+
+:Karolinska_Institutet
+ owl:sameAs :Royal_Caroline_Institute ;
+ rdf:type :University ;
+ :hq :Solna ;
+ :start "1810" .
+
+:KAUST
+ rdf:type :University ;
+ rdfs:label "King Abdullah University of Science and Technology" ;
+ :hq :Thuwal ;
+ :start "2009" .
+
+:kee-frame
+ rdfs:comment "re-frame with batteries included" .
+
+:KIT
+ rdf:type :University ;
+ rdfs:label "Karlsruhe Institute of Technology" ;
+ :hq :Karlsruhe ;
+ :start "1825" .
+
+:Konrad_Szydlo
+ rdf:type :Person .
+
+:Konstanz
+ rdf:type :Place .
+
+:KTH
+ rdf:type :University ;
+ rdfs:label "KTH Royal Institute of Technology" ;
+ :hq :Stockholm ;
+ :start "1827" .
+
+:KULeuven
+ rdf:type :University ;
+ rdfs:label "Katholieke Universiteit Leuven" ;
+ :hq :Leuven ;
+ :start "1425" .
+
+:Kyoto
+ rdf:type :Place .
+
+:La_Trobe_University
+ rdf:type :University ;
+ :hq :Melbourne ;
+ :start "1967" .
+
+:lacinia
+ rdfs:comment "GraphQL implementation in pure Clojure" .
+
+:lacinia-pedestal
+ rdfs:comment "Expose Lacinia GraphQL as Pedestal endpoints" .
+
+:lang
+ rdf:type rdf:Property ;
+ rdfs:domain :Language .
+
+:Language
+ rdf:type owl:Class .
+
+:lat
+ rdfs:domain :Place ;
+ rdfs:comment "Latitude" ;
+ rdf:type rdf:Property ;
+ rdfs:range :Float .
+
+:Learning_ClojureScript
+ :year "2016"^^xsd:gYear ;
+ :author :David_Jarvis .
+
+:Lecture
+ rdf:type owl:Class ;
+ rdfs:subClassOf :MediaGenre .
+
+:lecture
+ rdf:type rdf:Property ;
+ rdfs:range :Lecture .
+
+:lecturer
+ rdf:type rdf:Property ;
+ rdfs:subPropertyOf :speaker ;
+ rdfs:domain :Lecture .
+
+:Leipzig
+ rdf:type :Place .
+
+:Leonardo_Borges
+ rdf:type :Person .
+
+:Leuven
+ rdf:type :Place .
+
+:lib-noir
+ rdfs:comment "Contains utilities to create web applications using Ring framework: routing, redirections, static resources, password hashing, file uploads, sessions and cookies" .
+
+:Linkoping
+ rdf:type :Place .
+
+:Liverpool
+ rdf:type :Place .
+
+:Living_Clojure
+ :year "2015"^^xsd:gYear ;
+ :author :Carin_Meier .
+
+:lon
+ rdfs:domain :Place ;
+ rdfs:comment "Longitude" ;
+ rdf:type rdf:Property ;
+ rdfs:range :Float .
+
+:London
+ rdf:type :Place .
+
+:Los_Angeles
+ rdf:type :Place .
+
+:Luke_VanderHart
+ rdf:type :Person .
+
+:LUNO
+ rdf:type :University ;
+ rdfs:label "Loyola University New Orleans" ;
+ :hq :New_Orleans ;
+ :start "1904" .
+
+:Luxembourg
+ rdf:type :Country .
+
+:Lyon
+ rdf:type :Place .
+
+:Maastricht
+ rdf:type :Place .
+
+:Madrid
+ rdf:type :Place .
+
+:Malaga
+ rdf:type :Place .
+
+:Manchester
+ rdf:type :Place .
+
+:Mannheim
+ rdf:type :Place .
+
+:Mansfield
+ rdf:type :Place .
+
+:Mark_McDonnell
+ rdf:type :Person .
+
+:markdown-clj
+ rdfs:comment "compiles markdown to HTML" .
+
+:MarkupLanguage
+ rdf:type owl:Class ;
+ rdfs:subClassOf :Language .
+
+:Martin_Luther_University
+ rdf:type :University ;
+ rdfs:label "Martin Luther University Halle-Wittenberg" ;
+ :hq :Halle ;
+ :start "1502" .
+
+:Mastering_Clojure
+ :year "2016"^^xsd:gYear ;
+ :author :Akhil_Wali .
+
+:Mastering_Clojure_Data_Analysis
+ :year "2014"^^xsd:gYear ;
+ :author :Eric_Rochester .
+
+:Mastering_Clojure_Macros
+ :year "2014"^^xsd:gYear ;
+ :author :Colin_Jones .
+
+:media-role
+ rdf:type rdf:Property ;
+ rdfs:subPropertyOf :role .
+
+:MediaArtifact
+ rdf:type owl:Class ;
+ rdfs:subClassOf owl:Thing .
+
+:MediaGenre
+ rdf:type owl:Class ;
+ rdfs:subClassOf owl:Thing .
+
+:MediaOutlet
+ rdf:type owl:Class ;
+ rdfs:subClassOf owl:Thing .
+
+:Melbourne
+ rdf:type :Place .
+
+:member
+ rdf:type rdf:Property ;
+ rdfs:range :Organization .
+
+:merged-to
+ rdfs:domain :Organization ;
+ rdf:type rdf:Property ;
+ rdfs:range :Organization .
+
+:messenger-id
+ rdf:type rdf:Property ;
+ rdfs:range :MessengerId .
+
+:MessengerId
+ rdf:type owl:Class ;
+ rdfs:subClassOf rdfs:Literal .
+
+:Michael_Fogus
+ rdf:type :Person .
+
+:Microservices_with_Clojure
+ :year "2018"^^xsd:gYear ;
+ :author :Anuj_Kumar .
+
+:Minneapolis
+ rdf:type :Place .
+
+:MIT
+ rdf:type :University ;
+ rdfs:label "Massachusetts Institute of Technology" ;
+ :hq :Cambridge_MA ;
+ :start "1861" .
+
+:moderator
+ rdf:type rdf:Property ;
+ rdfs:subPropertyOf :media-role .
+
+:Mountain_View
+ rdf:type :Place .
+
+:Munich
+ rdf:type :Place .
+
+:n
+ rdfs:comment "Number of users" ;
+ rdf:type rdf:Property ;
+ rdfs:range :PositiveInteger .
+
+:name
+ rdfs:subPropertyOf rdfs:label ;
+ rdfs:domain :Object ;
+ rdf:type rdf:Property ;
+ rdfs:range rdfs:Literal .
+
+:Netherlands
+ rdf:type :Country .
+
+:New_Delhi
+ rdf:type :Place .
+
+:New_Haven
+ rdf:type :Place .
+
+:New_Orleans
+ rdf:type :Place .
+
+:New_York
+ rdf:type :Place .
+
+:New_Zealand
+ rdf:type :Country .
+
+:Newspaper
+ rdf:type owl:Class ;
+ rdfs:subClassOf :MediaArtifact .
+
+:nick
+ rdf:type rdf:Property ;
+ rdfs:range :String .
+
+:Nijmegen
+ rdf:type :Place .
+
+:noir-exception
+ rdfs:comment "prettified, rendered, exception stacks in the browser and log files" .
+
+:Northern_Ireland
+ rdf:type :Country .
+
+:Norway
+ rdf:type :Country .
+
+:note
+ rdfs:comment "Analog to skos/note" ;
+ rdf:type rdf:Property ;
+ rdfs:range rdfs:Literal .
+
+:NTNU
+ rdf:type :University ;
+ rdfs:label "Norwegian University of Science and Technology" ;
+ :hq :Trondheim .
+
+:NU
+ owl:sameAs :Northwestern_University ;
+ rdf:type :University ;
+ :hq :Evanston ;
+ :start "1851" .
+
+:Numerical_Linear_Algebra_for_Programmers
+ :year "2021"^^xsd:gYear ;
+ :author :Dragan_Djuric .
+
+:NUSingapore
+ rdf:type :University ;
+ rdfs:label "National University of Singapore" ;
+ :hq :Singapore ;
+ :start "1905", "1980" .
+
+:NYU
+ rdf:type :University ;
+ rdfs:label "New York University" ;
+ :hq :New_York ;
+ :start "1831" .
+
+:Oakland
+ rdf:type :Place .
+
+:Object
+ rdf:type owl:Class ;
+ rdfs:subClassOf owl:Thing .
+
+:OIST
+ owl:sameAs :OkinawaIST ;
+ rdf:type :University ;
+ rdfs:label "Okinawa Institute of Science and Technology" ;
+ :hq :Onna .
+
+:old-url
+ rdf:type rdf:Property ;
+ rdfs:subPropertyOf :defunct-url .
+
+:Onna
+ rdf:type :Place .
+
+:ordered
+ rdfs:comment "Ordered sets and maps, implemented in pure clojure" .
+
+:OregonHSU
+ rdf:type :University ;
+ rdfs:label "Oregon Health & Science University" ;
+ :hq :Portland .
+
+:org
+ rdf:type rdf:Property ;
+ rdfs:range :Organization .
+
+:Organization
+ rdf:type owl:Class ;
+ rdfs:subClassOf owl:Thing .
+
+:Oulu
+ rdf:type :Place .
+
+owl:Thing
+ rdf:type owl:Class .
+
+:Oxford
+ rdf:type :Place .
+
+:Padua
+ rdf:type :Place .
+
+:parent
+ rdfs:domain :Organization ;
+ rdf:type rdf:Property ;
+ rdfs:range :Organization .
+
+:Paris
+ rdf:type :Place .
+
+:part-of
+ rdfs:domain :Object ;
+ rdf:type rdf:Property ;
+ rdfs:range :Object .
+
+:participant
+ rdf:type rdf:Property ;
+ rdfs:subPropertyOf :media-role .
+
+:Pasadena
+ rdf:type :Place .
+
+:patreon
+ rdf:type rdf:Property ;
+ rdfs:subPropertyOf :url .
+
+:Paul_Stadig
+ rdf:type :Person .
+
+:Person
+ rdf:type owl:Class .
+
+:Perth
+ rdf:type :Place .
+
+:Philadelphia
+ rdf:type :Place .
+
+:Pittsburgh
+ rdf:type :Place .
+
+:place
+ rdf:type rdf:Property ;
+ rdfs:range :Place .
+
+:Place
+ rdf:type owl:Class ;
+ rdfs:subClassOf owl:Thing .
+
+:Poland
+ rdf:type :Country .
+
+:polylith
+ rdfs:comment "A tool used to develop Polylith based architectures in Clojure" .
+
+:Portland
+ rdf:type :Place .
+
+:PositiveInteger
+ rdf:type owl:Class ;
+ rdfs:subClassOf :Integer .
+
+:Practical_Clojure
+ :year "2010"^^xsd:gYear ;
+ :author :Luke_VanderHart .
+
+:Prague
+ rdf:type :Place .
+
+:Princeton
+ rdf:type :Place .
+
+:Professional_Clojure
+ :year "2016"^^xsd:gYear ;
+ :author :Jeremy_Anderson .
+
+:Programming_Clojure
+ :year "2018"^^xsd:gYear, "2009"^^xsd:gYear ;
+ :author :Alex_Miller, :Stuart_Halloway .
+
+:ProgrammingLanguage
+ rdf:type owl:Class ;
+ rdfs:subClassOf :Language .
+
+:project
+ rdf:type rdf:Property ;
+ rdfs:range :Project .
+
+:Project
+ rdf:type owl:Class ;
+ rdfs:subClassOf owl:Thing .
+
+:project-author
+ rdfs:domain :Project ;
+ rdf:type rdf:Property ;
+ rdfs:range :Person .
+
+:project-participant
+ rdfs:domain :Project ;
+ rdf:type rdf:Property ;
+ rdfs:range :Person .
+
+:prone
+ rdfs:comment "exception reporting output" .
+
+:Property
+ rdf:type owl:Class ;
+ rdfs:subClassOf :Object .
+
+:Providence
+ rdf:type :Place .
+
+:Provo
+ rdf:type :Place .
+
+:PUC-Rio
+ rdf:type :University ;
+ :url "puc-rio.br" ;
+ rdfs:label "Pontifical Catholic University of Rio de Janeiro" ;
+ :hq :Rio_de_Janeiro ;
+ :start "1940" .
+
+:Pullman
+ rdf:type :Place .
+
+:QCollege
+ rdf:type :University ;
+ rdfs:label "The Queen's College" ;
+ :hq :Oxford ;
+ :start "1341" .
+
+:Quick_Clojure_Effective_Functional_Programming
+ :year "2017"^^xsd:gYear ;
+ :author :Mark_McDonnell .
+
+:Rafik_Naccache
+ rdf:type :Person .
+
+rdfs:label
+ rdf:type rdf:Property .
+
+rdfs:Literal
+ rdf:type owl:Class .
+
+:Reactive_Programming_with_Clojure
+ :year "2019"^^xsd:gYear ;
+ :author :Konrad_Szydlo .
+
+<https://purl.org/prozion/clojure#>
+ rdf:type owl:Ontology ;
+ owl:imports <http://www.w3.org/1999/02/22-rdf-syntax-ns#>, <http://www.w3.org/2000/01/rdf-schema#>, <http://www.w3.org/2002/07/owl#>, <http://www.w3.org/2001/XMLSchema#> ;
+ rdfs:label "Knowledge graph on Clojure" .
+
+:Reed_College
+ rdf:type :University ;
+ :hq :Portland ;
+ :start "1908" .
+
+:ref
+ rdfs:comment "Reference, mentions of other persons or projects" ;
+ rdf:type rdf:Property .
+
+:Rethymnon
+ rdf:type :Place .
+
+:rewrite-clj
+ rdfs:comment "Rewrite Clojure code and edn" .
+
+:Reykjavik
+ rdf:type :Place .
+
+:Rich_Hickey
+ :bdate "1965"^^xsd:gYear ;
+ :edu :NYU ;
+ rdfs:comment "Creator of the language, BDFL" ;
+ rdf:type :Person ;
+ :creator :Clojure .
+
+:ring-server
+ rdfs:comment "A library for starting a web server to serve a Ring handler" .
+
+:Rio_de_Janeiro
+ rdf:type :Place .
+
+:Robert_Martin
+ :bdate "1952"^^xsd:gYear ;
+ :essay-url "blog.cleancoder.com/uncle-bob/2019/08/22/WhyClojure.html" ;
+ rdfs:comment "Author of Agile Manifesto" ;
+ rdf:type :Person .
+
+:role
+ rdf:type rdf:Property .
+
+:Rome
+ rdf:type :Place .
+
+:Rostock
+ rdf:type :Place .
+
+:RPI
+ rdf:type :University ;
+ rdfs:label "Rensselaer Polytechnic Institute" ;
+ :hq :Troy ;
+ :start "1824" .
+
+:rt
+ rdfs:subPropertyOf :url ;
+ rdfs:comment "RuTube" ;
+ rdf:type rdf:Property .
+
+:Russ_Olsen
+ rdf:type :Person .
+
+:Russia
+ rdf:type :Country .
+
+:RWTH_Aachen_University
+ rdf:type :University ;
+ rdfs:label "Rheinisch-Westfälische Technische Hochschule Aachen" ;
+ :hq :Aahen ;
+ :start "1870" .
+
+:Ryan_Baldwin
+ rdf:type :Person .
+
+:Ryan_Kelker
+ rdf:type :Person .
+
+:Ryan_Neufeld
+ rdf:type :Person .
+
+:s
+ rdfs:comment "Source" ;
+ rdf:type rdf:Property ;
+ rdfs:range :Source .
+
+:s-url
+ rdfs:subPropertyOf :s, :url ;
+ rdf:type rdf:Property ;
+ rdfs:range :SourceUrl .
+
+:Saint_Paul
+ rdf:type :Place .
+
+:Salt_Lake_City
+ rdf:type :Place .
+
+:San_Antonio
+ rdf:type :Place .
+
+:San_Diego
+ rdf:type :Place .
+
+:San_Francisco
+ rdf:type :Place .
+
+:Santa_Cruz
+ rdf:type :Place .
+
+:Santiago
+ rdf:type :Place .
+
+:Saudi_Arabia
+ rdf:type :Country .
+
+:SciCloj
+ :url "scicloj.github.io" .
+
+:Scotland
+ rdf:type :Country .
+
+:Seattle
+ rdf:type :Place .
+
+:self-def
+ rdfs:domain :Source ;
+ rdfs:comment "Self-definition by the source" ;
+ rdf:type rdf:Property ;
+ rdfs:range rdfs:Literal .
+
+:selmer
+ rdfs:comment "HTML template rendering library" .
+
+:Seoul
+ rdf:type :Place .
+
+:SF_State
+ rdf:type :University ;
+ rdfs:label "San Francisco State University" ;
+ :hq :San_Francisco ;
+ :start "1899" .
+
+:Shantanu_Kumar
+ rdf:type :Person .
+
+:shh
+ rdfs:comment "A CLI password manager designed for efficiency" .
+
+:Singapore
+ rdf:type :Place .
+
+:Solna
+ rdf:type :Place .
+
+:Source
+ rdf:type owl:Class ;
+ rdfs:subClassOf owl:Thing .
+
+:SourceUrl
+ rdf:type owl:Class ;
+ rdfs:subClassOf :UrlCore .
+
+:South_Africa
+ rdf:type :Country .
+
+:South_Korea
+ rdf:type :Country .
+
+:Spain
+ rdf:type :Country .
+
+:speaker
+ rdf:type rdf:Property ;
+ rdfs:subPropertyOf :media-role .
+
+:Springfield
+ rdf:type :Place .
+
+:St.Louis
+ rdf:type :Place .
+
+:StAndrews
+ rdf:type :Place .
+
+:Stanford
+ rdf:type :Place .
+
+:start
+ rdf:type rdf:Property ;
+ rdfs:range :Time .
+
+:State_of_Singapore
+ rdf:type :Country .
+
+:Stellenbosch
+ rdf:type :Place .
+
+:Stephan_Kamphausen
+ rdf:type :Person .
+
+:StJohnsU
+ rdf:type :University ;
+ rdfs:label "St. John's University" ;
+ :hq :New_York .
+
+:Stockholm
+ rdf:type :Place .
+
+:Stony_Brook
+ rdf:type :Place .
+
+:Storrs
+ rdf:type :Place .
+
+:String
+ rdf:type owl:Class ;
+ rdfs:subClassOf rdfs:Literal .
+
+:Stuart_Halloway
+ rdf:type :Person .
+
+:Stuart_Sierra
+ rdf:type :Person .
+
+:SUNY
+ rdf:type :University ;
+ rdfs:label "State University of New York" ;
+ :hq :New_York ;
+ :start "1948" .
+
+:Sweden
+ rdf:type :Country .
+
+:Switzerland
+ rdf:type :Country .
+
+:Sydney
+ rdf:type :Place .
+
+:Taipei
+ rdf:type :Place .
+
+:Taiwan
+ rdf:type :Country .
+
+:Technion
+ rdf:type :University ;
+ rdfs:label "Technion–Israel Institute of Technology" ;
+ :hq :Haifa ;
+ :start "1912" .
+
+:TechnoBlogSite
+ rdf:type owl:Class ;
+ rdfs:subClassOf :WebSite .
+
+:TelegramChannel
+ rdf:type owl:Class ;
+ rdfs:subClassOf :MediaOutlet .
+
+:TelegramChat
+ rdf:type owl:Class ;
+ rdfs:subClassOf :Chat .
+
+:Text
+ rdf:type owl:Class ;
+ rdfs:subClassOf :MediaArtifact .
+
+:tg
+ rdf:type rdf:Property ;
+ rdfs:subPropertyOf :messenger-id .
+
+:tg-n
+ rdfs:subPropertyOf :n ;
+ rdfs:comment "Number of subscribers for Telegram channel" ;
+ rdf:type rdf:Property .
+
+:The_Clojure_Workshop
+ :year "2020"^^xsd:gYear ;
+ :author :Joseph_Fahey .
+
+:The_Joy_of_Clojure
+ :year "2014"^^xsd:gYear ;
+ :author :Michael_Fogus .
+
+:Thuwal
+ rdf:type :Place .
+
+:timbre
+ rdfs:comment "A logging library" .
+
+:Time
+ rdf:type owl:Class ;
+ rdfs:subClassOf rdfs:Literal .
+
+:Timothy_Washington
+ rdf:type :Person .
+
+:title
+ rdf:type rdf:Property ;
+ rdfs:range rdfs:Literal .
+
+:Tokyo
+ rdf:type :Place .
+
+:tools.build
+ rdfs:comment "Library of functions for building Clojure projects" .
+
+:tools.deps.alpha
+ rdfs:comment "Dependency resolution and classpaths" .
+
+:Toronto
+ rdf:type :Place .
+
+:tower
+ rdfs:comment "support for internationalization and localization" .
+
+:TrinityUniversity
+ rdf:type :University ;
+ rdfs:label "Trinity University" ;
+ :hq :San_Antonio ;
+ :start "1869" .
+
+:Trondheim
+ rdf:type :Place .
+
+:Troy
+ rdf:type :Place .
+
+:TUBerlin
+ rdf:type :University ;
+ rdfs:label "Technical University of Berlin" ;
+ :hq :Berlin ;
+ :start "1879" .
+
+:Tubingen
+ rdf:type :Place .
+
+:TUDresden
+ rdf:type :University ;
+ :url "tu-dresden.de" ;
+ rdfs:label "Dresden University of Technology" ;
+ :hq :Dresden ;
+ :start "1828" .
+
+:TUMadrid
+ rdf:type :University ;
+ rdfs:label "Technical University of Madrid" ;
+ :hq :Madrid ;
+ :start "1971" .
+
+:TUMunich
+ rdf:type :University ;
+ rdfs:label "Technical University of Munich" ;
+ :hq :Munich ;
+ :start "1868" .
+
+:Turkey
+ rdf:type :Country .
+
+:tutor
+ rdf:type rdf:Property ;
+ rdfs:subPropertyOf :speaker ;
+ rdfs:domain :Lecture .
+
+:twi
+ rdf:type rdf:Property ;
+ rdfs:subPropertyOf :url .
+
+:Twitter
+ rdf:type owl:Class ;
+ rdfs:subClassOf :MediaOutlet .
+
+:UAE
+ rdf:type :Country .
+
+:UAlicante
+ rdf:type :University ;
+ rdfs:label "University of Alicante" ;
+ :hq :Alicante ;
+ :start "1979" .
+
+:UAuckland
+ rdf:type :University ;
+ rdfs:label "University of Auckland" ;
+ :hq :Auckland ;
+ :start "1883" .
+
+:UBColumbia
+ rdf:type :University ;
+ rdfs:label "University of British Columbia" ;
+ :hq :Vancouver ;
+ :start "1908" .
+
+:UBilkent
+ rdf:type :University ;
+ rdfs:label "UBilkent University" ;
+ :hq :Ankara .
+
+:UBirmingham
+ rdf:type :University ;
+ rdfs:label "University of Birmingham" ;
+ :hq :Birmingham ;
+ :start "1825" .
+
+:UBristol
+ rdf:type :University ;
+ rdfs:label "University of Bristol" ;
+ :hq :Bristol ;
+ :start "1595", "1876", "1909" .
+
+:UBrown
+ rdf:type :University ;
+ :member :Ivy_League ;
+ rdfs:label "Brown University" ;
+ :hq :Providence ;
+ :start "1764" .
+
+:UBrussels
+ rdf:type :University ;
+ rdfs:label "Free University of Brussels" ;
+ :hq :Brussels ;
+ :start "1834" .
+
+:UBuffalo
+ rdf:type :University ;
+ rdfs:label "University of Buffalo" ;
+ :hq :Buffalo .
+
+:UC_Berkeley
+ rdf:type :University ;
+ :part-of :UCalifornia ;
+ rdfs:label "University of California, Berkeley" ;
+ :hq :Berkeley .
+
+:UCalifornia
+ rdf:type :University ;
+ rdfs:label "University of California" ;
+ :hq :Oakland ;
+ :start "1868" .
+
+:UCambridge
+ rdf:type :University ;
+ :hq :Cambridge .
+
+:UCarnegieMellon
+ rdf:type :University ;
+ rdfs:label "Carnegie Mellon University" ;
+ :hq :Pittsburgh ;
+ :start "1900" .
+
+:UCBL
+ rdf:type :University ;
+ rdfs:label "Université Claude Bernard Lyon 1" ;
+ :hq :Lyon ;
+ :start "1971" .
+
+:UChicago
+ rdf:type :University ;
+ :part-of :UIllinois ;
+ rdfs:label "University of Illinois at Chicago" ;
+ :hq :Chicago ;
+ :start "1965" .
+
+:UClermont
+ rdf:type :University ;
+ rdfs:label "University of Auvergne" ;
+ :hq :Clermont-Ferrand .
+
+:UCLondon
+ owl:sameAs :UCL ;
+ rdf:type :University ;
+ rdfs:label "University College London" ;
+ :hq :London ;
+ :start "1826" .
+
+:UColorado
+ rdf:type :University ;
+ :hq :Denver ;
+ :start "1876" .
+
+:UColumbia
+ rdf:type :University ;
+ :member :Ivy_League ;
+ rdfs:label "Columbia University" ;
+ :hq :New_York ;
+ :start "1754" .
+
+:UConn
+ owl:sameAs :UConnecticut ;
+ rdf:type :University ;
+ rdfs:label "University of Connecticut" ;
+ :hq :Storrs, :Mansfield .
+
+:UCornell
+ rdf:type :University ;
+ :member :Ivy_League ;
+ rdfs:label "Cornell University" ;
+ :hq :Ithaca ;
+ :start "1865" .
+
+:UCrete
+ rdf:type :University ;
+ :url "uoc.gr" ;
+ rdfs:label "University of Crete" ;
+ :hq :Rethymnon, :Heraklion ;
+ :start "1973" .
+
+:UCSC
+ owl:sameAs :UC_Santa_Cruz ;
+ rdf:type :University ;
+ :part-of :UCalifornia ;
+ rdfs:label "University of California Santa Cruz" ;
+ :hq :Santa_Cruz ;
+ :start "1965" .
+
+:UCSD
+ owl:sameAs :UC_San_Diego ;
+ rdf:type :University ;
+ :part-of :UCalifornia ;
+ rdfs:label "University of California San Diego" ;
+ :hq :San_Diego ;
+ :start "1903", "1960" .
+
+:UEdinburgh
+ rdf:type :University ;
+ rdfs:label "University of Edinburgh" ;
+ :hq :Edinburgh ;
+ :start "1582" .
+
+:UEMS
+ rdf:type :University ;
+ :part-of :UEdinburgh ;
+ rdfs:label "University of Edinburgh Medical School" ;
+ :hq :Edinburgh .
+
+:UFlorence
+ rdf:type :University ;
+ rdfs:label "University of Florence" ;
+ :hq :Florence .
+
+:UFreiburg
+ rdf:type :University ;
+ rdfs:label "University of Freiburg" ;
+ :hq :Freiburg_im_Breisgau ;
+ :start "1457" .
+
+:UGhent
+ rdf:type :University ;
+ :hq :Ghent ;
+ :start "1817" .
+
+:UGottingen
+ rdf:type :University ;
+ rdfs:label "University of Göttingen" ;
+ :hq :Gottingen .
+
+:UHarvard
+ rdf:type :University ;
+ :member :Ivy_League ;
+ rdfs:label "Harvard University" ;
+ :hq :Cambridge_MA ;
+ :start "1636" .
+
+:UHeidelberg
+ rdf:type :University ;
+ rdfs:label "University of Heidelberg" ;
+ :hq :Heidelberg .
+
+:UHelsinki
+ rdf:type :University ;
+ :hq :Helsinki ;
+ :start "1640" .
+
+:UHertfordshire
+ rdf:type :University ;
+ :hq :Hertfordshire ;
+ :start "1952" .
+
+:UHumboldt
+ rdf:type :University ;
+ rdfs:label "Humboldt University of Berlin" ;
+ :hq :Berlin .
+
+:UiB
+ rdf:type :University ;
+ rdfs:label "University of Bergen" ;
+ :hq :Bergen .
+
+:UIceland
+ rdf:type :University ;
+ rdfs:label "University of Iceland" ;
+ :hq :Reykjavik ;
+ :start "1911" .
+
+:UIllinois
+ rdf:type :University ;
+ :hq :Urbana, :Champaign .
+
+:UJohnsHopkins
+ rdf:type :University ;
+ rdfs:label "Johns Hopkins University" ;
+ :hq :Baltimore ;
+ :start "1876" .
+
+:UKeio
+ rdf:type :University ;
+ rdfs:label "Keio University" ;
+ :hq :Tokyo .
+
+:UKent
+ rdf:type :University ;
+ :hq :Canterbury ;
+ :start "1965" .
+
+:UKonstanz
+ rdf:type :University ;
+ rdfs:label "University of Konstanz" ;
+ :hq :Konstanz .
+
+:Ukraine
+ rdf:type :Country .
+
+:UKyoto
+ rdf:type :University ;
+ :nick "Kyodai" ;
+ rdfs:label "Kyoto University" ;
+ :hq :Kyoto .
+
+:ULB
+ rdf:type :University ;
+ :part-of :UBrussels ;
+ rdfs:label "Université Libre de Bruxelles" ;
+ :start "1969" .
+
+:ULeipzig
+ rdf:type :University ;
+ :hq :Leipzig ;
+ :start "1409" .
+
+:ULinkoping
+ rdf:type :University ;
+ rdfs:label "Linköping University" ;
+ :hq :Linkoping ;
+ :start "1969" .
+
+:ULondon
+ rdf:type :University ;
+ :hq :London ;
+ :start "1836" .
+
+:ULuxembourg
+ rdf:type :University ;
+ rdfs:label "University of Luxembourg" ;
+ :hq :Esch-sur-Alzette .
+
+:UMaastricht
+ rdf:type :University ;
+ rdfs:label "Maastricht University" ;
+ :hq :Maastricht .
+
+:UMalaga
+ rdf:type :University ;
+ rdfs:label "University of Malaga" ;
+ :hq :Malaga ;
+ :start "1972" .
+
+:UManchester
+ rdf:type :University ;
+ rdfs:label "University of Manchester" ;
+ :hq :Manchester ;
+ :start "1824" .
+
+:UMannheim
+ rdf:type :University ;
+ :hq :Mannheim ;
+ :start "1967" .
+
+:UMaryland
+ rdf:type :University ;
+ rdfs:label "University of Maryland, College Park" ;
+ :hq :College_Park ;
+ :start "1856" .
+
+:UMass
+ rdf:type :University ;
+ rdfs:label "University of Massachusetts" ;
+ :hq :Amherst ;
+ :start "1863", "1964" .
+
+:UMass_Amherst
+ rdf:type :University ;
+ rdfs:label "University of Massachusetts Amherst" ;
+ :hq :Amherst ;
+ :start "1863" .
+
+:UMelbourne
+ rdf:type :University ;
+ rdfs:label "University of Melbourne" ;
+ :hq :Melbourne ;
+ :start "1853" .
+
+:UMichigan
+ rdf:type :University ;
+ rdfs:label "University of Michigan" ;
+ :hq :Ann_Arbor ;
+ :start "1817" .
+
+:UMinnesota
+ rdf:type :University ;
+ rdfs:label "University of Minnesota" ;
+ :hq :Minneapolis, :Saint_Paul ;
+ :start "1851" .
+
+:UMissouri
+ owl:sameAs :Mizzou ;
+ rdf:type :University ;
+ rdfs:label "University of Missouri" ;
+ :hq :Columbia ;
+ :start "1839" .
+
+:UMonash
+ rdf:type :University ;
+ rdfs:label "Monash University" ;
+ :hq :Melbourne ;
+ :start "1958" .
+
+:UMurdoch
+ rdf:type :University ;
+ :campus :Singapore, :Dubai ;
+ rdfs:label "Murdoch University" ;
+ :hq :Perth ;
+ :start "1973" .
+
+:UNijmegen
+ rdf:type :University ;
+ rdfs:label "Radboud University Nijmegen" ;
+ :hq :Nijmegen ;
+ :start "1923" .
+
+:University
+ rdf:type owl:Class ;
+ rdfs:subClassOf :Organization .
+
+:UNMexico
+ rdf:type :University ;
+ rdfs:label "University of New Mexico" ;
+ :hq :Albuquerque ;
+ :start "1889" .
+
+:UNSW
+ rdf:type :University ;
+ rdfs:label "The University of New South Wales" ;
+ :hq :Sydney ;
+ :start "1949" .
+
+:UOhio
+ owl:sameAs :OSU ;
+ rdf:type :University ;
+ rdfs:label "Ohio State University" ;
+ :hq :Columbus ;
+ :start "1870" .
+
+:UOxford
+ rdf:type :University ;
+ :hq :Oxford .
+
+:UPadua
+ rdf:type :University ;
+ rdfs:label "University of Padua" ;
+ :hq :Padua .
+
+:UPenn
+ owl:sameAs :UPennsylvania ;
+ rdf:type :University ;
+ :member :Ivy_League ;
+ rdfs:label "University of Pennsylvania" ;
+ :hq :Philadelphia ;
+ :start "1740" .
+
+:UPrinceton
+ rdf:type :University ;
+ :member :Ivy_League ;
+ rdfs:label "Princeton University" ;
+ :hq :Princeton ;
+ :start "1746" .
+
+:UQ
+ rdf:type :University ;
+ rdfs:label "University of Queensland" ;
+ :hq :Brisbane ;
+ :start "1909" .
+
+:Urbana
+ rdf:type :Place .
+
+:Uri
+ rdf:type owl:Class ;
+ rdfs:subClassOf rdfs:Literal .
+
+:URice
+ rdf:type :University ;
+ :hq :Houston ;
+ :start "1912" .
+
+:url
+ rdf:type rdf:Property ;
+ rdfs:range :UrlCore .
+
+:Url
+ rdf:type owl:Class ;
+ rdfs:subClassOf :Uri .
+
+:UrlCore
+ rdfs:subClassOf :Url ;
+ rdfs:comment "Url with prefixes removed: http://, https://, https://www. etc. to make it neater" ;
+ rdf:type owl:Class .
+
+:URome
+ rdf:type :University ;
+ rdfs:label "Sapienza University of Rome" ;
+ :hq :Rome ;
+ :start "1303" .
+
+:URome2
+ owl:sameAs :Tor_Vergata ;
+ rdf:type :University ;
+ rdfs:label "University of Rome Tor Vergata" ;
+ :hq :Rome ;
+ :start "1982" .
+
+:URostock
+ rdf:type :University ;
+ rdfs:label "University of Rostock" ;
+ :hq :Rostock .
+
+:USA
+ rdf:type :Country .
+
+:USouthernCalifornia
+ owl:sameAs :USC ;
+ rdf:type :University ;
+ rdfs:label "University of Southern California" ;
+ :hq :Los_Angeles .
+
+:USpringfield
+ rdf:type :University ;
+ :part-of :UIllinois ;
+ rdfs:label "University of Illinois at Springfield" ;
+ :hq :Springfield ;
+ :start "1969" .
+
+:UStAnd
+ rdf:type :University ;
+ rdfs:label "University of St Andrews" ;
+ :hq :StAndrews ;
+ :start "1413" .
+
+:UStanford
+ rdf:type :University ;
+ rdfs:label "Stanford University" ;
+ :hq :Stanford ;
+ :start "1891" .
+
+:UStellenbosch
+ rdf:type :University ;
+ rdfs:label "Stellenbosch University" ;
+ :hq :Stellenbosch ;
+ :start "1918" .
+
+:UStonyBrook
+ rdf:type :University ;
+ rdfs:label "State University of New York at Stony Brook" ;
+ :hq :Stony_Brook ;
+ :start "1957" .
+
+:USydney
+ rdf:type :University ;
+ rdfs:label "University of Sydney" ;
+ :hq :Sydney ;
+ :start "1850" .
+
+:UTexas
+ rdf:type :University ;
+ :hq :Austin ;
+ :start "1883" .
+
+:UToronto
+ rdf:type :University ;
+ rdfs:label "University of Toronto" ;
+ :hq :Toronto ;
+ :start "1827" .
+
+:UTubingen
+ rdf:type :University ;
+ rdfs:label "University of Tübingen" ;
+ :hq :Tubingen .
+
+:UUlster
+ rdf:type :University ;
+ rdfs:label "Ulster University" ;
+ :hq :Coleraine, :Belfast, :Jordanstown, :Derry .
+
+:UUrbana-Champaign
+ rdf:type :University ;
+ :part-of :UIllinois ;
+ rdfs:label "University of Illinois at Urbana–Champaign" ;
+ :hq :Urbana, :Champaign ;
+ :start "1867" .
+
+:UUTah
+ rdf:type :University ;
+ :url "utah.edu" ;
+ :hq :Salt_Lake_City ;
+ :start "1850" .
+
+:UVirginia
+ owl:sameAs :UVA ;
+ rdf:type :University ;
+ rdfs:label "University of Virginia" ;
+ :hq :Charlottesville ;
+ :start "1819" .
+
+:UVrije_Amsterdam
+ rdf:type :University ;
+ rdfs:label "Vrije Universiteit Amsterdam" ;
+ :hq :Amsterdam .
+
+:UWashington
+ rdf:type :University ;
+ :hq :Seattle ;
+ :start "1861" .
+
+:UWellington
+ rdf:type :University ;
+ rdfs:label "Victoria University of Wellington" ;
+ :hq :Wellington ;
+ :start "1897" .
+
+:UWright
+ rdf:type :University ;
+ rdfs:label "Wright State University" ;
+ :hq :Fairborn ;
+ :start "1967" .
+
+:UWroclaw
+ rdfs:label "University of UWroclaw" ;
+ :hq :Wroclaw ;
+ :start "1702" ;
+ rdf:type :University ;
+ :former-name "Universität Breslau" .
+
+:UYale
+ rdf:type :University ;
+ :member :Ivy_League ;
+ rdfs:label "Yale University" ;
+ :hq :New_Haven ;
+ :start "1701" .
+
+:v
+ rdfs:comment "Number of views" ;
+ rdf:type rdf:Property ;
+ rdfs:range :PositiveInteger .
+
+:Vancouver
+ rdf:type :Place .
+
+:Version
+ rdf:type owl:Class .
+
+:Video
+ rdf:type owl:Class ;
+ rdfs:subClassOf :MediaArtifact .
+
+:video
+ rdf:type rdf:Property .
+
+:video-n
+ rdfs:comment "Number of videoes" ;
+ rdf:type rdf:Property ;
+ rdfs:range :PositiveInteger .
+
+:VideoMeeting
+ rdf:type owl:Class ;
+ rdfs:subClassOf :Conference .
+
+:VirginiaIU
+ owl:sameAs :Virginia_Tech ;
+ rdf:type :University ;
+ rdfs:label "Virginia Polytechnic Institute and State University" ;
+ :hq :Blacksburg .
+
+:Vitoria
+ rdf:type :Place .
+
+:vk
+ rdf:type rdf:Property ;
+ rdfs:subPropertyOf :url .
+
+:vk-n
+ rdfs:subPropertyOf :n ;
+ rdfs:comment "Number of subscribers for Vkontakte public or group" ;
+ rdf:type rdf:Property .
+
+:VkontaktePublic
+ rdf:type owl:Class ;
+ rdfs:subClassOf :MediaOutlet .
+
+:voip-id
+ rdf:type rdf:Property ;
+ rdfs:subPropertyOf :messenger-id .
+
+:VUB
+ owl:sameAs :UVrijeBrussel ;
+ rdf:type :University ;
+ :part-of :UBrussels ;
+ rdfs:label "Vrije Universiteit Brussel" ;
+ :start "1969" .
+
+:VUManchester
+ rdf:type :University ;
+ :merged-to :UManchester ;
+ rdfs:label "Victoria University of Manchester" ;
+ :hq :Manchester ;
+ :start "1851" .
+
+:Warsaw
+ rdf:type :Place .
+
+:Washington
+ rdf:type :Place .
+
+:WashingtonSU
+ owl:sameAs :WSU ;
+ rdf:type :University ;
+ :hq :Pullman ;
+ :start "1890" .
+
+:weave
+ rdfs:comment "Clojure data format and tools for weaving documents" .
+
+:Web_Development_with_Clojure
+ :year "2021"^^xsd:gYear ;
+ :author :Dmitri_Sotnikov .
+
+:WebSite
+ rdf:type owl:Class ;
+ rdfs:subClassOf :MediaOutlet .
+
+:Wellington
+ rdf:type :Place .
+
+:Worcester
+ rdf:type :Place .
+
+:working-note
+ rdfs:subPropertyOf :note ;
+ rdfs:comment "Analog to skos/editorialNote" ;
+ rdf:type rdf:Property .
+
+:Wroclaw
+ rdf:type :Place .
+
+:WUSM
+ rdf:type :University ;
+ :part-of :WUSTL ;
+ rdfs:label "Washington University School of Medicine" ;
+ :start "1891" .
+
+:WUSTL
+ owl:sameAs :WashU ;
+ rdf:type :University ;
+ rdfs:label "Washington University in St. Louis" ;
+ :hq :St.Louis ;
+ :start "1853" .
+
+:year
+ rdf:type rdf:Property ;
+ rdfs:range :Year .
+
+:Year
+ rdf:type owl:Class ;
+ rdfs:subClassOf :Time .
+
+:YoutubeChannel
+ rdf:type owl:Class ;
+ rdfs:subClassOf :MediaOutlet .
+
+:yt
+ rdf:type rdf:Property ;
+ rdfs:subPropertyOf :url .
+
+:yt-channel
+ rdfs:subPropertyOf :channel ;
+ rdf:type rdf:Property ;
+ rdfs:range :YoutubeChannel .
+
+:yt-n
+ rdfs:subPropertyOf :n ;
+ rdfs:comment "Number of subscribers for YouTube channel" ;
+ rdf:type rdf:Property .
+
+:yt-video-n
+ rdfs:subPropertyOf :video-n ;
+ rdfs:comment "Number of videoes on the YouTube channel" ;
+ rdf:type rdf:Property .
+
+:Zachary_Tellman
+ rdf:type :Person .
+
+:ZoomVideoMeeting
+ rdf:type owl:Class ;
+ rdfs:subClassOf :VideoMeeting .
+
+:Zurich
+ rdf:type :Place .
+
+:Воронеж
+ rdf:type :Place ;
+ :lat "51.661667"^^xsd:float ;
+ :lon "39.200278"^^xsd:float .
+
+:Долгопрудный
+ rdf:type :Place .
+
+:Екатеринбург
+ rdf:type :Place .
+
+:Зеленоград
+ rdf:type :Place ;
+ :lat "55.991893"^^xsd:float ;
+ :lon "37.214382"^^xsd:float .
+
+:Иван_Гришаев
+ rdf:type :Person ;
+ :place :Воронеж ;
+ :homepage-url "grishaev.me" .
+
+:Ижевск
+ rdf:type :Place ;
+ :lat "56.849722"^^xsd:float ;
+ :lon "53.207222"^^xsd:float .
+
+:ИКТИБ
+ owl:sameAs :ICTIS ;
+ rdf:type :University ;
+ :part-of :ЮФУ ;
+ rdfs:label "Институт Компьютерных Технологий и Информационной Безопасности" ;
+ :hq :Таганрог .
+
+:ИТМО
+ owl:sameAs :IFMO ;
+ rdf:type :University ;
+ rdfs:label "Университет Информационных Технологий, Механики и Оптики" ;
+ :hq :Санкт-Петербург ;
+ :start "1900" .
+
+:Казань
+ rdf:type :Place .
+
+:Киев
+ rdf:type :Place .
+
+:КПИ
+ owl:sameAs :ISKPI ;
+ rdf:type :University ;
+ rdfs:label "Igor Sikorsky Kyiv Polytechnic Institute" ;
+ :hq :Киев ;
+ :start "1898" .
+
+:Краснодар
+ rdf:type :Place .
+
+:Красноярск
+ rdf:type :Place .
+
+:МГТУ_Баумана
+ rdf:type :University ;
+ :nick "Бауманка" ;
+ rdfs:label "Московский государственный технический университет им.Н.Э.Бaумана" ;
+ :hq :Москва ;
+ :start "1830" .
+
+:МГУ
+ owl:sameAs :MSU ;
+ rdf:type :University ;
+ rdfs:label "Московский государственный университет" ;
+ :hq :Москва ;
+ :start "1755" .
+
+:Минск
+ rdf:type :Place .
+
+:МИФИ
+ owl:sameAs :MEPhI ;
+ rdf:type :University ;
+ rdfs:label "Московский инженерно-физический институт" ;
+ :hq :Москва ;
+ :start "1942" .
+
+:МИЭТ
+ owl:sameAs :MIEE, :МИЭТ ;
+ rdf:type :University ;
+ :hq :Зеленоград ;
+ :start "1965" .
+
+:Москва
+ rdf:type :Place ;
+ :lat "55.753889"^^xsd:float ;
+ :lon "37.620278"^^xsd:float .
+
+:МФТИ
+ owl:sameAs :MIPT, :Физтех ;
+ rdf:type :University ;
+ :nick "Физтех" ;
+ :hq :Долгопрудный ;
+ :start "1951" .
+
+:МЭИ
+ owl:sameAs :MPEI ;
+ rdf:type :University ;
+ rdfs:label "Московский Энергетический Институт" ;
+ :hq :Москва ;
+ :start "1930" .
+
+:Нижний_Новгород
+ rdf:type :Place ;
+ :lat "56.326944"^^xsd:float ;
+ :lon "44.006111"^^xsd:float .
+
+:Новосибирск
+ rdf:type :Place .
+
+:Норильск
+ rdf:type :Place .
+
+:Пермь
+ rdf:type :Place .
+
+:Ростов-на-Дону
+ rdf:type :Place .
+
+:Санкт-Петербург
+ rdf:type :Place ;
+ :lat "59.939167"^^xsd:float ;
+ :lon "30.315833"^^xsd:float .
+
+:СФУ
+ rdf:type :University ;
+ rdfs:label "Сибирский Федеральный Университет" ;
+ :hq :Красноярск ;
+ :start "2006" .
+
+:Таганрог
+ rdf:type :Place .
+
+:Тюмень
+ rdf:type :Place .
+
+:Харьков
+ rdf:type :Place .
+
+:ХНУРЭ
+ owl:sameAs :NURE, :KhSTUR ;
+ rdf:type :University ;
+ :url "nure.ua" ;
+ rdfs:label "Харківський національний університет радіоелектроніки" ;
+ :hq :Харьков .
+
+:Челябинск
+ rdf:type :Place .
+
+:ЮУГУ
+ owl:sameAs :SUSU ;
+ rdf:type :University ;
+ rdfs:label "South Ural State University" ;
+ :hq :Челябинск .
+
+:ЮФУ
+ owl:sameAs :SFedU ;
+ rdf:type :University ;
+ rdfs:label "Южный Федеральный Университет" ;
+ :hq :Ростов-на-Дону .
+

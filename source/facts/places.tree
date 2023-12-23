@@ -1,0 +1,205 @@
+places +a:Country
+	Australia +a:Place
+		Brisbane
+		Melbourne
+		Perth
+		Sydney
+	Belarus +a:Place
+		Минск
+	Belgium +a:Place
+		Brussels
+		Ghent
+		Leuven
+	Brazil +a:Place
+		Rio_de_Janeiro
+		Vitoria
+	Canada +a:Place
+		Toronto
+		Vancouver
+	Chile +a:Place
+		Santiago
+	China +a:Place
+		Beijing
+	Czech_Republic +a:Place
+		Prague
+	England +a:Place
+		Birmingham
+		Bristol
+		Cambridge
+		Canterbury
+		Hertfordshire
+		Liverpool
+		London
+		Manchester
+		Oxford
+	Finland +a:Place
+		Helsinki
+		Oulu
+	France +a:Place
+		Clermont-Ferrand
+		Lyon
+		Paris
+	Germany +a:Place
+		Aahen
+		Berlin
+		Dresden
+		Freiburg_im_Breisgau
+		Gottingen
+		Halle
+		Hamburg
+		Hanover
+		Heidelberg
+		Jena
+		Karlsruhe
+		Konstanz
+		Leipzig
+		Mannheim
+		Munich
+		Rostock
+		Tubingen
+	Greece +a:Place
+		Athens
+		Heraklion alt:Iraklion
+		Rethymnon
+	Iceland +a:Place
+		Reykjavik
+	India +a:Place
+		New_Delhi
+	Israel +a:Place
+		Haifa
+	Italy +a:Place
+		Florence
+		Padua
+		Rome
+	Japan +a:Place
+		Kyoto
+		Onna
+		Tokyo
+	Luxembourg +a:Place
+		Esch-sur-Alzette
+	Netherlands +a:Place
+		Amsterdam
+		Maastricht
+		Nijmegen
+	New_Zealand +a:Place
+		Auckland
+		Wellington
+	Northern_Ireland +a:Place
+		Belfast
+		Coleraine
+		Derry
+		Jordanstown
+	Norway +a:Place
+		Bergen
+		Trondheim
+	Poland +a:Place
+		Warsaw
+		Wroclaw
+	Russia +a:Place
+		Воронеж lat:51.661667 lon:39.200278
+		Долгопрудный
+		Екатеринбург
+		Зеленоград lat:55.991893 lon:37.214382
+		Ижевск lat:56.849722 lon:53.207222
+		Москва lat:55.753889 lon:37.620278
+		Казань
+		Краснодар
+		Красноярск
+		Нижний_Новгород lat:56.326944 lon:44.006111
+		Новосибирск
+		Норильск
+		Пермь
+		Ростов-на-Дону
+		Санкт-Петербург lat:59.939167 lon:30.315833
+		Таганрог
+		Тюмень
+		Челябинск
+	Saudi_Arabia +a:Place
+		Thuwal
+	Scotland +a:Place
+		Edinburgh
+		StAndrews
+	South_Africa +a:Place
+		Stellenbosch
+	South_Korea +a:Place
+		Gwangju
+		Seoul
+	Spain +a:Place
+		Alicante
+		Madrid
+		Malaga
+	State_of_Singapore +a:Place
+		Singapore
+	Sweden +a:Place
+		Gothenburg
+		Linkoping
+		Solna
+		Stockholm
+	Switzerland +a:Place
+		Ecublens
+		Zurich
+	Taiwan +a:Place
+		Taipei
+	Turkey +a:Place
+		Ankara
+		Istanbul
+	Ukraine +a:Place
+		Киев
+		Харьков
+	UAE
+		Dubai
+	USA +a:Place
+		Albuquerque
+		Amherst
+		Ann_Arbor
+		Austin
+		Baltimore
+		Blacksburg
+		Boston
+		Berkeley
+		Buffalo
+		Cambridge_MA
+		Champaign
+		Charlottesville
+		Chicago
+		College_Park
+		Columbia
+		Columbus
+		Denver
+		Evanston
+		Fairborn
+		Farmington
+		Houston
+		Ithaca
+		Los_Angeles
+		Mansfield
+		Minneapolis
+		Mountain_View
+		New_Haven
+		New_Orleans
+		New_York
+		Oakland
+		Pasadena
+		Philadelphia
+		Pittsburgh
+		Portland
+		Princeton
+		Providence
+		Provo
+		Pullman
+		Saint_Paul
+		Salt_Lake_City
+		Santa_Cruz
+		San_Antonio
+		San_Diego
+		San_Francisco
+		Seattle
+		Springfield
+		Stanford
+		Stony_Brook
+		Storrs
+		St.Louis
+		Troy
+		Urbana
+		Washington
+		Worcester

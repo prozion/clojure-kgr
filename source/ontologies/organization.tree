@@ -1,0 +1,16 @@
+classes +a:owl/Class +hi-inv-rel:subclass-of
+	owl/Thing
+		Organization
+			Company
+			University
+			InteruniversityInformalOrganization
+properties +a:rdf/Property +hi-inv-rel:subproperty-of
+	campus domain:University range:Place
+	hq domain:Organization range:Place
+	member range:Organization
+		job range:Company
+	merged-to domain:Organization range:Organization
+	nick range:String
+	org range:Organization
+	parent domain:Organization range:Organization
+		

@@ -1,0 +1,46 @@
+books
+	paper
+		Clojure_на_производстве author:Иван_Гришаев year:2021
+		Web_Development_with_Clojure author:Dmitri_Sotnikov year:2021
+		Deep_Learning_for_Programmers author:Dragan_Djuric year:2021
+		Numerical_Linear_Algebra_for_Programmers author:Dragan_Djuric year:2021
+		The_Clojure_Workshop author:Joseph_Fahey year:2020
+		Reactive_Programming_with_Clojure author:Konrad_Szydlo year:2019
+		Elements_of_Clojure author:Zachary_Tellman year:2018
+		Clojure_Polymorphism author:Paul_Stadig year:2019
+		Clojure_Extended_Java_Interop author:Иван_Гришаев year:2018
+		Getting_Clojure author:Russ_Olsen year:2018
+		Programming_Clojure author:Alex_Miller year:2018
+		Microservices_with_Clojure author:Anuj_Kumar year:2018
+		Quick_Clojure_Effective_Functional_Programming author:Mark_McDonnell year:2017
+		ClojureScript_Unraveled author:Andrey_Antukh year:2016
+		Learning_ClojureScript author:David_Jarvis year:2016
+		Professional_Clojure author:Jeremy_Anderson year:2016
+		Mastering_Clojure author:Akhil_Wali year:2016
+		Clojure_for_Java_Developers author:Eduardo_Diaz year:2016
+		Clojure_for_Finance author:Timothy_Washington year:2016
+		Clojure_in_Action author:Amit_Rathore year:2016
+		Clojure_for_the_Brave_and_True author:Daniel_Higginbotham year:2015
+		Clojure_Recipes author:Julian_Gamble year:2015
+		Clojure_Applied author:Ben_Vandgrift,Alex_Miller year:2015
+		Clojure_for_Data_Science author:Henry_Garner year:2015
+		Clojure_High_Perfomance_Programming author:Shantanu_Kumar year:2015
+		Clojure_Data_Structures_and_Algorithms author:Rafik_Naccache year:2015
+		Living_Clojure author:Carin_Meier year:2015
+		Clojure_Reactive_Programming author:Leonardo_Borges year:2015
+		Clojure_Web_Development_Essentials author:Ryan_Baldwin year:2015
+		Clojure_Data_Analysis_Cookbook author:Eric_Rochester year:2015
+		Mastering_Clojure_Macros author:Colin_Jones year:2014
+		The_Joy_of_Clojure author:Michael_Fogus year:2014
+		Mastering_Clojure_Data_Analysis author:Eric_Rochester year:2014
+		Clojure_for_Machine_Learning author:Akhil_Wali year:2014
+		Clojure_Cookbook author:Ryan_Neufeld year:2014
+		Clojure_for_Domain_specific_Languages author:Ryan_Kelker year:2013
+		Functional_Programming_Patterns_in_Scala_and_Clojure author: Michael_Bevilacqua-Linn year:2013
+		ClojureScript_Up_and_Running author:Stuart_Sierra,Luke_VanderHart year:2012
+		Clojure_Programming author:Chas_Emerick year:2012
+		Clojure author:Stephan_Kamphausen year:2010
+		Practical_Clojure author:Luke_VanderHart year:2010
+		Programming_Clojure author:Stuart_Halloway year:2009
+	online
+		Babashka_book url:book.babashka.org

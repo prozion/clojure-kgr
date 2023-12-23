@@ -1,0 +1,158 @@
+clojure.lang d:"Java classes and interfaces that implement Clojure language"
+	classes +a:JavaClass +section-hierarchy-relation:extended-by
+		AFn impl:IFn
+			APersistentVector
+				AMapEntry
+					MapEntry
+				PersistentVector
+			AFunction
+				RestFn
+					FnLoaderThunk
+			APersistentMap
+				PersistentArrayMap
+				PersistentHashMap
+				PersistentStructMap
+				PersistentTreeMap
+			APersistentSet
+				PersistentHashSet
+				PersistentTreeSet
+			ATransientMap
+			ATransientSet
+			MultiFn
+			Symbol
+		AReference impl:IReference
+			ARef
+				Agent
+				Atom
+				Ref
+				Var
+			Namespace
+		ArityException extends:java.lang.IllegalArgumentException
+		ArrayChunk impl:IChunk
+		ArrayIter impl:java.util.Iterator
+		BigInt extends:java.lang.Number
+		Binding
+		Box
+		ChunkBuffer impl:Counted
+		Compile
+		Compiler impl:Opcodes
+		Delay impl:IDeref,IPending
+		DynamicClassLoader extends:java.net.URLClassLoader
+		EdnReader
+		ExceptionInfo extends:java.lang.RuntimeException
+		Keyword impl:IFn
+		KeywordLookupSite impl:ILookupSite,ILookupThunk
+		LazilyPersistentVector
+		LispReader
+		LockingTransaction
+		MethodImplCache
+		Murmur3
+		Numbers
+		Obj impl:IObj
+			ASeq
+				ArraySeq
+				ChunkedCons
+				Cons
+				Cycle
+				EnumerationSeq
+				Iterate
+				IteratorSeq
+				LongRange
+				PersistentList
+				PersistentQueue
+				Range
+				Repeat
+				StringSeq
+			LazySeq
+		ProxyHandler impl:InvocationHandler
+		PushbackReader
+			LineNumberingPushbackReader
+		RT
+		Ratio extends:java.lang.Number
+		ReaderConditional impl:ILookup
+		RecordIterator impl:java.util.Iterator
+		Reduced impl:IDeref
+		Reflector
+		Repl
+		Script
+		SeqEnumeration impl:java.util.Enumeration
+		SeqIterator impl:java.util.Iterator
+		TaggedLiteral impl:ILookup
+		TransactionalHashMap extends:java.util.AbstractMap
+		TransformerIterator impl:java.util.Iterator
+		Tuple
+		Util
+		Volatile impl:IDeref
+		XMLHandler extends:org.xml.sax.helpers.DefaultHandler
+	interfaces +section-hierarchy-relation:extended-by
+		IPersistentCollection
+			Associative
+				IPersistentMap
+				IPersistentVector
+		Counted
+			IPersistentMap
+			Indexed
+				IPersistentVector
+				ITransientVector
+			ITransientMap
+			ITransientSet
+			IndexedSeq
+		Fn
+		IAtom
+			IAtom2
+		IBlockingDeref
+		IDeref
+			IRef
+		IEditableCollection
+		IExceptionInfo
+		IFn extends:java.util.concurrent.Callable,java.lang.Runnable
+		IHashEq
+		IKVReduce
+		IKeywordLookup
+		ILookup
+			ITransientAssociative
+				ITransientAssociative2
+				ITransientMap
+				ITransientSet
+				ITransientVector
+		ILookupSite
+		ILookupThunk
+		IMapEntry extends:java.util.Map.Entry
+		IMapIterable
+		IMeta
+			IObj
+			IReference
+		Indexed
+			IChunk
+		IPending
+		IPersistentCollection
+			ISeq
+				IChunkedSeq
+				IndexedSeq
+		IProxy
+		IRecord
+		IReduceInit
+			IReduce
+		ITransientCollection
+			ITransientAssociative ref:ITransientAssociative
+		IType
+		MapEquivalence
+		Named
+		Opcodes
+			Intrinsics
+		Reversible
+			IPersistentVector
+		Seqable
+			IPersistentCollection
+				IPersistentSet
+				IPersistentStack
+					IPersistentList
+					IPersistentVector
+		Sequential
+			IPersistentList
+			IPersistentVector
+			IndexedSeq
+		Settable
+		Sorted
+		WarnBoxedMath
+	

@@ -1,0 +1,36 @@
+libs
+	project_managers
+		lein
+		boot
+		clj
+	other_libs
+		build-clj d:"Common build tasks abstracted into a library"
+		calva d:"integrated REPL powered environment for enjoyable and productive Clojure and ClojureScript development in Visual Studio Code"
+		cheshire d:"feature-rich, fast JSON encoder"
+		clj-xml-validation d:"A library designed to wrap the Java libraries for XML schema validation"
+		clojure-tools d:"A Cloud Native Buildpack that builds Clojure-based applications from source"
+		cronj d:"A library for creating cron-like scheduling tasks"
+		digest d:"Digest algorithms (md5, sha1 …​) for Clojure"
+		environ d:"allows to create different application configuration in different environments"
+		etaoin d:"testing framework, that uses webdriver interface"
+		expectations/clojure.test
+		glimt d:"HTTP FSM for re-frame"
+		hiccup d:"A fast library for rendering HTML in Clojure"
+		kee-frame d:"re-frame with batteries included"
+		markdown-clj d:"compiles markdown to HTML"
+		lacinia d:"GraphQL implementation in pure Clojure"
+		lacinia-pedestal d:"Expose Lacinia GraphQL as Pedestal endpoints"
+		lib-noir d:"Contains utilities to create web applications using Ring framework: routing, redirections, static resources, password hashing, file uploads, sessions and cookies"
+		noir-exception d:"prettified, rendered, exception stacks in the browser and log files"
+		ordered d:"Ordered sets and maps, implemented in pure clojure"
+		polylith d:"A tool used to develop Polylith based architectures in Clojure"
+		prone d:"exception reporting output"
+		rewrite-clj d:"Rewrite Clojure code and edn"
+		ring-server d:"A library for starting a web server to serve a Ring handler"
+		selmer d:"HTML template rendering library"
+		shh d:"A CLI password manager designed for efficiency"
+		timbre d:"A logging library"
+		tools.build d:"Library of functions for building Clojure projects"
+		tools.deps.alpha d:"Dependency resolution and classpaths"
+		tower d:"support for internationalization and localization"
+		weave d:"Clojure data format and tools for weaving documents"

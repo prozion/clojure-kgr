@@ -1,0 +1,14 @@
+classes +a:owl/Class +hi-inv-rel:subclass-of
+	Code
+	Class
+		JavaClass
+	Function
+		ClojureFunction
+	Language
+		DomainSpecificLanguage alt:DSL
+		MarkupLanguage
+		ProgrammingLanguage
+	Version
+		ClojureVersion
+properties +a:rdf/Property +hi-inv-rel:subproperty-of
+	lang domain:Language
